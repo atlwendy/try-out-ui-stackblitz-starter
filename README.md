@@ -1,27 +1,15 @@
 # UiStackblitzStarter
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
+This project is to provide an easy way to create a bug reproduction.
 
-## Development server
+## Steps
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+In this project, libraries and all needed dependencies have been installed. Following the steps to get stackblitz up and include its link in your issue reports.
 
-## Code scaffolding
+1. `git checkout -b {BRANCH_NAME}`
+2. Put your code in `app.component.html` and `app.component.ts` to reproduce the bug.
+3. Once it's done, push your branch to github.
+4. Go to `stackblitz.com/github/GetTerminus/ui-stackblitz-starter/tree/{TAG|BRANCH|COMMIT}` to view your branch in action.
+(For example, if my branch name is `an-input-bug`, the address would be `stackblitz.com/github/GetTerminus/ui-stackblitz-starter/tree/an-input-bug` )
+5. When open a ticket in `terminus-ui` library, please include your stackblitz link - `stackblitz.com/github/GetTerminus/ui-stackblitz-starter/tree/{TAG|BRANCH|COMMIT}`!
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
